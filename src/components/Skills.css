@@ -1,0 +1,134 @@
+/* General Styles */
+#skills {
+    background-color: #f8f9fa;
+    padding: 3rem 0;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    animation: fadeIn 1s ease-out;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.skill-icon {
+    font-size: 3rem;
+    transition: transform 0.3s, color 0.3s, filter 0.3s;
+    cursor: pointer;
+}
+
+/* Section Colors */
+.languages-section .skill-icon {
+    color: #007bff; /* Blue for Languages */
+}
+
+.styling-section .skill-icon {
+    color: #ff5722; /* Orange for Styling & Markup */
+}
+
+.databases-section .skill-icon {
+    color: #28a745; /* Green for Databases */
+}
+
+.cloud-section .skill-icon {
+    color: #ff9900; /* Orange for Cloud Platforms */
+}
+
+.frameworks-section .skill-icon {
+    color: #6610f2; /* Purple for Frameworks */
+}
+
+.tools-section .skill-icon {
+    color: #17a2b8; /* Teal for Tools */
+}
+
+.ai-section .skill-icon {
+    color: #6f42c1; /* Violet for AI-related skills */
+}
+
+.analytics-section .skill-icon {
+    color: #e83e8c; /* Pink for Analytics & Visualization */
+}
+
+/* Hover Effects */
+.skill-icon:hover {
+    transform: scale(1.2);
+    filter: brightness(1.2);
+    animation: bounce 0.5s alternate infinite; /* Add a bounce effect */
+}
+
+/* Bounce animation */
+@keyframes bounce {
+    0% {
+        transform: scale(1.2);
+    }
+    50% {
+        transform: scale(1.3);
+    }
+    100% {
+        transform: scale(1.2);
+    }
+}
+
+/* Skill Cards */
+.skill-card {
+    background: #ffffff;
+    border: 1px solid #dee2e6;
+    padding: 1.5rem;
+    border-radius: 10px;
+    transition: box-shadow 0.3s, transform 0.3s, background-color 0.3s;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Hover effect for skill card */
+.skill-card:hover {
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.2);
+    transform: translateY(-5px);
+    background-color: #f1f1f1; /* Subtle background color change on hover */
+}
+
+/* Headings */
+h2 {
+    color: #343a40;
+    font-weight: bold;
+    animation: slideIn 1s ease-out;
+}
+
+h3 {
+    color: #495057;
+    font-weight: bold;
+    animation: slideIn 1.2s ease-out;
+}
+
+/* Slide-in animation for headings */
+@keyframes slideIn {
+    from {
+        transform: translateX(-50%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+/* Fullstack Section */
+.fullstack-section .skill-icon {
+    color: #343a40; /* Dark Gray for Fullstack Development */
+}
+
+/* Responsive Design (optional) */
+@media (max-width: 768px) {
+    .skill-icon {
+        font-size: 2.5rem;
+    }
+    .skill-card {
+        padding: 1rem;
+    }
+}
